@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+  <title>Colin O'Sullivan</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+ </head>
+
+ <body>
+
+<p>Upload an image to see the displayed effect of decreasing the resolution.</p>
+
+<p>Some sample images for testing are linked below. Save the image first, then upload it to the resolution adjuster application.</p>
+
+<!-- The data encoding type, enctype, MUST be specified as below -->
+<form enctype="multipart/form-data" action="newimage.php" method="POST">
+    <!-- MAX_FILE_SIZE must precede the file input field -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+    <!-- Name of input element determines name in $_FILES array -->
+    Image for upload: <input name="userfile" type="file" /><br>
+    (Maximum file size allowed is 1MB.)<br><br>
+    <input type="submit" value="Upload Image" />
+</form>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<a href="1904205001_7135eafdd7.jpg"><img src="1904205001_7135eafdd7.jpg" width="106" height="100" border="0"></a>&nbsp;
+<a href="2434145480_7c0bfe6d9e_b.jpg"><img src="2434145480_7c0bfe6d9e_b.jpg" width="133" height="100" border="0"></a>&nbsp;
+<a href="2456216540_c58c74de77_b.jpg"><img src="2456216540_c58c74de77_b.jpg" width="133" height="100" border="0"></a>&nbsp;
+<!--<a href="DSLR-A100_50MM_F2.8_MACRO_SAMPLE3.JPG"><img src="DSLR-A100_50MM_F2.8_MACRO_SAMPLE3.JPG" width="150" height="100" border="0"></a>-->
+
+ </body>
+</html>
